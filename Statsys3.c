@@ -1,9 +1,9 @@
-/* Æú¾Æ¿ô 4¸¦ ¸ðÆ¼ºê·Î ¸¸µé¾îÁø Ä³¸¯ÅÍ ½ºÅÈ ½Ã½ºÅÛ */
+/* í´ì•„ì›ƒ 4ë¥¼ ëª¨í‹°ë¸Œë¡œ ë§Œë“¤ì–´ì§„ ìºë¦­í„° ìŠ¤íƒ¯ ì‹œìŠ¤í…œ */
 
 #include <stdio.h>
 int main()
 {
-	int select; //½ÃÀÛ, ÃÊ±âÈ­ ¹¹ÇÒÁö Á¤ÇÏ´Â º¯¼ö
+	int select; //ì‹œìž‘, ì´ˆê¸°í™” ë­í• ì§€ ì •í•˜ëŠ” ë³€ìˆ˜
 	
 	int Strength = 0;
 	int Perception = 0;
@@ -13,8 +13,8 @@ int main()
 	int Agility = 0;
 	int Luck = 0;
 
-	int STATPOINT = 28; //»ç¿ëÇÒ ¼ö ÀÖ´Â ½ºÅÈÃÊÀÎÆ®(Èû, ¹ÎÃ¸µîÀ» ÂïÀ»¶§ »ç¿ë)
-	int STATNAME = 0; //¾î¶² ½ºÅÈÀ» °í¸£´ÂÁö ±¸º°ÇÏ´Â ¿ªÇÒ
+	int STATPOINT = 28; //ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” ìŠ¤íƒ¯ì´ˆì¸íŠ¸(íž˜, ë¯¼ì²©ë“±ì„ ì°ì„ë•Œ ì‚¬ìš©)
+	int STATNAME = 0; //ì–´ë–¤ ìŠ¤íƒ¯ì„ ê³ ë¥´ëŠ”ì§€ êµ¬ë³„í•˜ëŠ” ì—­í• 
 
 
 	printf("-- Your STAT System --\n");
@@ -23,148 +23,147 @@ int main()
 		printf("\n(1) Start     (2) Reset     (3)Quit\n");
 		scanf("%d", &select);
 
-		if (select == 1) { //½ÃÀÛ¼±ÅÃÁö
+		if (select == 1) { //ì‹œìž‘ì„ íƒì§€
 			while (1) {
 				printf("\n\nYour STAT Point : <%d>\n\n", STATPOINT);
-				printf(" [%d] Èû(Strength) - ´ç½ÅÀÇ °­·ÂÇÑ ÈûÀ¸·Î ÀÌ ÀüÀåÀ» ÈÛ¾µ¼ö ÀÖ½À´Ï´Ù!\n [%d] ÀÎÁö(Perception) - ¿À°¨À» ¿¹¸¸ÇÏ°ÔÇÏ¼¼¿ä. ´ç½ÅÀº ÀüÀåÀÇ ¸ðµç ¼ºÈ²À» ¾Ë ¼ö ÀÖ½À´Ï´Ù.\n [%d] Ã¼·Â(Endurance) - ¿òÁ÷ÀÌ´Â °Í ¸»°íµµ ´ç½ÅÀÇ °­ÀÎÇÑ Ã¼·ÂÀº ¸ðµç »óÈ²¿¡¼­ µµ¿òÀÌ µË´Ï´Ù!\n [%d] Ä«¸®½º¸¶(Charisma) - »ç¶÷µéÀ» ÈÖ¾îÀâ°í ½ÍÀ¸½Å°¡¿ä? ÀÌ°Í ÇÏ³ª¸é °¡´ÉÇÕ´Ï´Ù!\n [%d] Áö´É(Intelligence) - ¹«ÁöÇÔÀº ¸ðµç Çàµ¿ÀÇ È¿À²¼ºÀ» ÀúÇÏ½ÃÅµ´Ï´Ù. ÀÌ ¼¼»ó¿¡µµ ¹è¿òÀÇ ±æÀº ÇÊ¿äÇÏ°Åµç¿ä.\n [%d] ¹ÎÃ¸(Agility) - ±ÙÁ¢ÀÌ°Å³ª ¿ø°Å¸®³ª ¹ÎÃ¸ÇÔÀº ´ç½ÅÀ» ÀüÀåÀÇ Æ¯º°ÇÑ Á¸Àç·Î ¸¸µé¾îÁÝ´Ï´Ù!\n [%d] Çà¿î(Luck) - »õ»óÀÏÀº ¾Æ¹«µµ ¸ð¸¨´Ï´Ù. Çà¿îÀÇ ¿©½ÅÀÌ ³ª¿Í ÇÔ²²ÇÏ±æ..\n", Strength, Perception, Endurance, Charisma, Intelligence, Agility, Luck);
-				printf("\n¿Ã¸®°í½ÍÀº ½ºÅÈÀÇ ¹øÈ£À» ÀûÀ¸¼¼¿ä = ");
+				printf(" [%d] íž˜(Strength) - ë‹¹ì‹ ì˜ ê°•ë ¥í•œ íž˜ìœ¼ë¡œ ì´ ì „ìž¥ì„ íœ©ì“¸ìˆ˜ ìžˆìŠµë‹ˆë‹¤!\n [%d] ì¸ì§€(Perception) - ì˜¤ê°ì„ ì˜ˆë§Œí•˜ê²Œí•˜ì„¸ìš”. ë‹¹ì‹ ì€ ì „ìž¥ì˜ ëª¨ë“  ì„±í™©ì„ ì•Œ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.\n [%d] ì²´ë ¥(Endurance) - ì›€ì§ì´ëŠ” ê²ƒ ë§ê³ ë„ ë‹¹ì‹ ì˜ ê°•ì¸í•œ ì²´ë ¥ì€ ëª¨ë“  ìƒí™©ì—ì„œ ë„ì›€ì´ ë©ë‹ˆë‹¤!\n [%d] ì¹´ë¦¬ìŠ¤ë§ˆ(Charisma) - ì‚¬ëžŒë“¤ì„ íœ˜ì–´ìž¡ê³  ì‹¶ìœ¼ì‹ ê°€ìš”? ì´ê²ƒ í•˜ë‚˜ë©´ ê°€ëŠ¥í•©ë‹ˆë‹¤!\n [%d] ì§€ëŠ¥(Intelligence) - ë¬´ì§€í•¨ì€ ëª¨ë“  í–‰ë™ì˜ íš¨ìœ¨ì„±ì„ ì €í•˜ì‹œí‚µë‹ˆë‹¤. ì´ ì„¸ìƒì—ë„ ë°°ì›€ì˜ ê¸¸ì€ í•„ìš”í•˜ê±°ë“ ìš”.\n [%d] ë¯¼ì²©(Agility) - ê·¼ì ‘ì´ê±°ë‚˜ ì›ê±°ë¦¬ë‚˜ ë¯¼ì²©í•¨ì€ ë‹¹ì‹ ì„ ì „ìž¥ì˜ íŠ¹ë³„í•œ ì¡´ìž¬ë¡œ ë§Œë“¤ì–´ì¤ë‹ˆë‹¤!\n [%d] í–‰ìš´(Luck) - ìƒˆìƒì¼ì€ ì•„ë¬´ë„ ëª¨ë¦…ë‹ˆë‹¤. í–‰ìš´ì˜ ì—¬ì‹ ì´ ë‚˜ì™€ í•¨ê»˜í•˜ê¸¸..\n", Strength, Perception, Endurance, Charisma, Intelligence, Agility, Luck);
+				printf("\nì˜¬ë¦¬ê³ ì‹¶ì€ ìŠ¤íƒ¯ì˜ ë²ˆí˜¸ì„ ì ìœ¼ì„¸ìš” = ");
 				scanf("%d", &STATNAME);
 				if (STATNAME == 1) {
 					Strength++;
 					STATPOINT--;
 					if (STATPOINT < 0) {
-						printf("\n¸ðµç ½ºÅÈÆ÷ÀÎÆ®¸¦ ´Ù »ç¿ëÇß½À´Ï´Ù.");
+						printf("\nëª¨ë“  ìŠ¤íƒ¯í¬ì¸íŠ¸ë¥¼ ë‹¤ ì‚¬ìš©í–ˆìŠµë‹ˆë‹¤.");
 						STATPOINT++;
 						Strength--;
 					}
 					if (Strength == 11) {
-						printf("\nÀÌ¹Ì ÇØ´ç ½ºÅÈÀÌ ÃÖ´ëÄ¡ÀÔ´Ï´Ù.");
+						printf("\nì´ë¯¸ í•´ë‹¹ ìŠ¤íƒ¯ì´ ìµœëŒ€ì¹˜ìž…ë‹ˆë‹¤.");
 						STATPOINT++;
 						Strength--;
 					}
-					printf("\nÇöÁ¦ \"Èû\"½ºÅÈÀÇ ¼ö : %d", Strength);
+					printf("\ní˜„ì œ \"íž˜\"ìŠ¤íƒ¯ì˜ ìˆ˜ : %d", Strength);
 				}
 				if (STATNAME == 2) {
 					Perception++;
 					STATPOINT--;
 					if (STATPOINT < 0) {
-						printf("\n¸ðµç ½ºÅÈÆ÷ÀÎÆ®¸¦ ´Ù »ç¿ëÇß½À´Ï´Ù.");
+						printf("\nëª¨ë“  ìŠ¤íƒ¯í¬ì¸íŠ¸ë¥¼ ë‹¤ ì‚¬ìš©í–ˆìŠµë‹ˆë‹¤.");
 						STATPOINT++;
 						Perception--;
 					}
 					if (Perception == 11) {
-						printf("\nÀÌ¹Ì ÇØ´ç ½ºÅÈÀÌ ÃÖ´ëÄ¡ÀÔ´Ï´Ù.");
+						printf("\nì´ë¯¸ í•´ë‹¹ ìŠ¤íƒ¯ì´ ìµœëŒ€ì¹˜ìž…ë‹ˆë‹¤.");
 						STATPOINT++;
 						Perception--;
 					}
-					printf("\nÇöÁ¦ \"ÀÎÁö\"½ºÅÈÀÇ ¼ö : %d", Perception);
+					printf("\ní˜„ì œ \"ì¸ì§€\"ìŠ¤íƒ¯ì˜ ìˆ˜ : %d", Perception);
 				}
 				if (STATNAME == 3) {
 					Endurance++;
 					STATPOINT--;
 					if (STATPOINT < 0) {
-						printf("\n¸ðµç ½ºÅÈÆ÷ÀÎÆ®¸¦ ´Ù »ç¿ëÇß½À´Ï´Ù.");
+						printf("\nëª¨ë“  ìŠ¤íƒ¯í¬ì¸íŠ¸ë¥¼ ë‹¤ ì‚¬ìš©í–ˆìŠµë‹ˆë‹¤.");
 						STATPOINT++;
 						Endurance--;
 					}
 					if (Endurance == 11) {
-						printf("\nÀÌ¹Ì ÇØ´ç ½ºÅÈÀÌ ÃÖ´ëÄ¡ÀÔ´Ï´Ù.");
+						printf("\nì´ë¯¸ í•´ë‹¹ ìŠ¤íƒ¯ì´ ìµœëŒ€ì¹˜ìž…ë‹ˆë‹¤.");
 						STATPOINT++;
 						Endurance--;
 					}
-					printf("\nÇöÁ¦ \"Ã¼·Â\"½ºÅÈÀÇ ¼ö : %d", Endurance);
+					printf("\ní˜„ì œ \"ì²´ë ¥\"ìŠ¤íƒ¯ì˜ ìˆ˜ : %d", Endurance);
 				}
 				if (STATNAME == 4) {
 					Charisma++;
 					STATPOINT--;
 					if (STATPOINT < 0) {
-						printf("\n¸ðµç ½ºÅÈÆ÷ÀÎÆ®¸¦ ´Ù »ç¿ëÇß½À´Ï´Ù.");
+						printf("\nëª¨ë“  ìŠ¤íƒ¯í¬ì¸íŠ¸ë¥¼ ë‹¤ ì‚¬ìš©í–ˆìŠµë‹ˆë‹¤.");
 						STATPOINT++;
 						Charisma--;
 					}
 					if (Charisma == 11) {
-						printf("\nÀÌ¹Ì ÇØ´ç ½ºÅÈÀÌ ÃÖ´ëÄ¡ÀÔ´Ï´Ù.");
+						printf("\nì´ë¯¸ í•´ë‹¹ ìŠ¤íƒ¯ì´ ìµœëŒ€ì¹˜ìž…ë‹ˆë‹¤.");
 						STATPOINT++;
 						Charisma--;
 					}
-					printf("\nÇöÁ¦ \"Ä«¸®½º¸¶\"½ºÅÈÀÇ ¼ö : %d", Charisma);
+					printf("\ní˜„ì œ \"ì¹´ë¦¬ìŠ¤ë§ˆ\"ìŠ¤íƒ¯ì˜ ìˆ˜ : %d", Charisma);
 				}
 				if (STATNAME == 5) {
 					Intelligence++;
 					STATPOINT--;
 					if (STATPOINT < 0) {
-						printf("\n¸ðµç ½ºÅÈÆ÷ÀÎÆ®¸¦ ´Ù »ç¿ëÇß½À´Ï´Ù.");
+						printf("\nëª¨ë“  ìŠ¤íƒ¯í¬ì¸íŠ¸ë¥¼ ë‹¤ ì‚¬ìš©í–ˆìŠµë‹ˆë‹¤.");
 						STATPOINT++;
 						Intelligence--;
 					}
 					if (Intelligence == 11) {
-						printf("\nÀÌ¹Ì ÇØ´ç ½ºÅÈÀÌ ÃÖ´ëÄ¡ÀÔ´Ï´Ù.");
+						printf("\nì´ë¯¸ í•´ë‹¹ ìŠ¤íƒ¯ì´ ìµœëŒ€ì¹˜ìž…ë‹ˆë‹¤.");
 						STATPOINT++;
 						Intelligence--;
 					}
-					printf("\nÇöÁ¦ \"Áö´É\"½ºÅÈÀÇ ¼ö : %d", Intelligence);
+					printf("\ní˜„ì œ \"ì§€ëŠ¥\"ìŠ¤íƒ¯ì˜ ìˆ˜ : %d", Intelligence);
 				}
 				if (STATNAME == 6) {
 					Agility++;
 					STATPOINT--;
 					if (STATPOINT < 0) {
-						printf("\n¸ðµç ½ºÅÈÆ÷ÀÎÆ®¸¦ ´Ù »ç¿ëÇß½À´Ï´Ù.");
+						printf("\nëª¨ë“  ìŠ¤íƒ¯í¬ì¸íŠ¸ë¥¼ ë‹¤ ì‚¬ìš©í–ˆìŠµë‹ˆë‹¤.");
 						STATPOINT++;
 						Agility--;
 					}
 					if (Agility == 11) {
-						printf("\nÀÌ¹Ì ÇØ´ç ½ºÅÈÀÌ ÃÖ´ëÄ¡ÀÔ´Ï´Ù.");
+						printf("\nì´ë¯¸ í•´ë‹¹ ìŠ¤íƒ¯ì´ ìµœëŒ€ì¹˜ìž…ë‹ˆë‹¤.");
 						STATPOINT++;
 						Agility--;
 					}
-					printf("\nÇöÁ¦ \"¹ÎÃ¸\"½ºÅÈÀÇ ¼ö : %d", Agility);
+					printf("\ní˜„ì œ \"ë¯¼ì²©\"ìŠ¤íƒ¯ì˜ ìˆ˜ : %d", Agility);
 				}
 				if (STATNAME == 7) {
 					Luck++;
 					STATPOINT--;
 					if (STATPOINT < 0) {
-						printf("\n¸ðµç ½ºÅÈÆ÷ÀÎÆ®¸¦ ´Ù »ç¿ëÇß½À´Ï´Ù.");
+						printf("\nëª¨ë“  ìŠ¤íƒ¯í¬ì¸íŠ¸ë¥¼ ë‹¤ ì‚¬ìš©í–ˆìŠµë‹ˆë‹¤.");
 						STATPOINT++;
 						Luck--;
 					}
 					if (Luck == 11) {
-						printf("\nÀÌ¹Ì ÇØ´ç ½ºÅÈÀÌ ÃÖ´ëÄ¡ÀÔ´Ï´Ù.");
+						printf("\nì´ë¯¸ í•´ë‹¹ ìŠ¤íƒ¯ì´ ìµœëŒ€ì¹˜ìž…ë‹ˆë‹¤.");
 						STATPOINT++;
 						Luck--;
 					}
-					printf("\nÇöÁ¦ \"Çà¿î\"½ºÅÈÀÇ ¼ö : %d", Luck);
+					printf("\ní˜„ì œ \"í–‰ìš´\"ìŠ¤íƒ¯ì˜ ìˆ˜ : %d", Luck);
 				}
 				if (STATNAME == 99) {
-					printf("\n\n<¸ÞÀÎÈ­¸éÀ¸·Î µ¹¾Æ°©´Ï´Ù.>\n\n");
+					printf("\n\n<ë©”ì¸í™”ë©´ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.>\n\n");
 					break;
 				}
 				else if (STATNAME < 0 || STATNAME > 7) {
-					printf("´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+					printf("ë‹¤ì‹œ ìž…ë ¥í•´ì£¼ì„¸ìš”");
 				}
 			}
 		}
-		else if (select == 2) { //ÃÊ±âÈ­¼±ÅÃÁö
+		else if (select == 2) { //ì´ˆê¸°í™”ì„ íƒì§€
 			Strength = 0, Perception = 0, Endurance = 0, Charisma = 0, Intelligence = 0, Agility = 0, Luck = 0;
 			STATPOINT = 28;
-			printf("ÃÊ±âÈ­ ¿Ï·á");
+			printf("ì´ˆê¸°í™” ì™„ë£Œ");
 		}
 		else if (select == 3) {
-			printf(" - ½Ã½ºÅÛÀÌ Á¾·áµË´Ï´Ù -");
+			printf(" - ì‹œìŠ¤í…œì´ ì¢…ë£Œë©ë‹ˆë‹¤ -");
 			break;
 		}
 		else {
-			printf("\n <´Ù½Ã ÀÔ·Â ÇØÁÖ¼¼¿ä>");
+			printf("\n <ë‹¤ì‹œ ìž…ë ¥ í•´ì£¼ì„¸ìš”>");
 		}
 	}
-	printf("\nÁÁÀº ÇÏ·ç µÇ¼¼¿ä!\n\n\n\n");
+	printf("\nì¢‹ì€ í•˜ë£¨ ë˜ì„¸ìš”!\n\n\n\n");
 	return 0;
 }
 
 /*
 
-¹®Á¦Á¡ : ½ºÅÈÀ» ÃÖ´ë±îÁö Âï¾úÀ»¶§ 'ÇöÀç ½ºÅÈÀÇ ¼ö : 11'·Î ³ª¿È.
-11À» 10À¸·Î ³ª¿À°Ô²û °³¼±ÀÌ ÇÊ¿äÇÔ
+ê°œì„ ì  : ê³µí†µë˜ëŠ” ì½”ë“œë¥¼ í•œê°œë¡œ ì¶•ì†Œí•˜ê¸°
 
-Ãß°¡ÇÏ±â : ÈûÀÌ³ª ¹ÎÃ¸µîÀÇ ½ºÅÈÀ» 1¾¿ ¿Ã¸®Áö ¸»°í, ¾ó¸¶¸¸Å­ ¿Ã¸±°ÇÁö »ç¿ëÀÚ°¡ Á÷Á¢ ÀÔ·ÂÇÏµµ·Ï ÇÑ´Ù.
+ì¶”ê°€í•˜ê¸° : íž˜ì´ë‚˜ ë¯¼ì²©ë“±ì˜ ìŠ¤íƒ¯ì„ 1ì”© ì˜¬ë¦¬ì§€ ë§ê³ , ì–¼ë§ˆë§Œí¼ ì˜¬ë¦´ê±´ì§€ ì‚¬ìš©ìžê°€ ì§ì ‘ ìž…ë ¥í•˜ë„ë¡ í•œë‹¤.
 
 */
