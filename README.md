@@ -1,4 +1,5 @@
-# Fallout Stat System <hr/>## Introduction
+# Fallout Stat System <hr/>
+## Introduction
 
 #### - 폴아웃 4를 모티브로 한 간단한 스탯 시스템.
 #### - It is a character stat system with a fallout 4.
